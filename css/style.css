@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #26a69a;
+}
+
+.hero {
+    margin-top: 5vh;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 50px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    box-shadow: 15px 15px;
+}
+
+.iist-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 30pxs;
+}
+
+.item-delete {
+    width: 40px;
+    height: 40px;
+    float: left;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../trash.png");
+}
+
+.assembler {
+    margin-top: 100px;
+    display: none;
+}

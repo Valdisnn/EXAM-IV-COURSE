@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Экзамен</title>
+</head>
+<body>
+<section class="hero">
+    <div class="container">
+        <h1 class="hero-title">Привет пользователь</h1>
+        <div class="row">
+            <div class="col s6">
+                <input id="name" type="text" placeholder="Укажите имя и фамилию" value="" class="clearValueName">
+                <input id="login" type="email" placeholder="Укажите логин" value="" class="clearValueLogin">
+                <input id="password" type="password" placeholder="Задайте пароль" value="" class="clearValuePass">
+            </div>
+            <div class="col s6">
+                <input id="loginLog" type="email" placeholder="Введите логин" value="" class="clearAlreadyLog">
+                <input id="passwordLog" type="password" placeholder="Введите пароль" value="" class="clearAlreadyPass">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <a class="btn btn-register">Регистрация</a>
+            </div>
+            <div class="col s4">
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Подсказка</a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Пользователи</h4>
+                        <ul class="list">
+                            <li class="list-item item">
+                                <p class="item-title">ТекстТекстТекст</p>
+                                <button class="item-delete"></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ладно</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <a class="btn btn-login">Залогиниться</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="assembler">
+        <div class="container">
+            <div class="row">
+                <div class="col s3">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea command"></textarea>
+                            <label for="textarea1">Команда Assembler</label>
+                            <a class="waves-effect waves-light btn red assmblBtn">Считать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s3">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea5" class="materialize-textarea regResultOnTwo"></textarea>
+                            <h5 style="color: red; font-weight: bold">Двоич.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s3">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea3" class="materialize-textarea regResult"></textarea>
+                            <h5 style="color: red; font-weight: bold">Десят.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s3">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea6" class="materialize-textarea regResultOnSix"></textarea>
+                            <h5 style="color: red; font-weight: bold">Шестн.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s6">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea2" class="materialize-textarea regOne"></textarea>
+                            <label for="textarea2">Значение первого регистра</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea4" class="materialize-textarea regTwo"></textarea>
+                            <label for="textarea4">Значение второго регистра</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="./js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    M.AutoInit();
+</script>
+</body>
+</html>
